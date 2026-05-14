@@ -1,119 +1,56 @@
-// vetor, for: estrutura de repetição
-/*
-const vetor = [1, 2, 3, 4, 5, 6, 7, 8]
-
-for (let i = 0; i < vetor.length; i++) {
-    console.log(i, vetor[i])
-    //vetor[i] = 5
-}
-
-*/
-
-//mostre a soma dos números
-/*
-const vetor = [1, 2, 3, 4, 5, 6, 7, 8]
-let soma = 0
-for (let i = 0; i < vetor.length; i++) {
-    soma +=vetor[i]
-}
-    console.log(soma)
-*/
-
-//mostre do ultimo até o primeiro
-/*
-const vetor = [1, 2, 3, 4, 5, 6, 7, 8]
-
-for (let i = vetor.length - 1; i >= 0;  i--) {
-    console.log(i, vetor[i])
-
-}
-*/
-//faça um algoritimo que solicite 5 numeros para o usuario
-//preencha o vetor e depois execute a soma dos elementos do vetor
+// 1- Dado um array de objetos usuarios: [{id: 1, nome: 'Ana'}, {id: 2, nome: 'Beto'}],
+//Encontrar o usuário com id: 2.
 
 /*
-const prompt = require('prompt-sync')();
-const vetor = []
 
-for (let i = 0; i < 5; i++) 
-    vetor.push(Number(prompt("Digite seu número")));
-
-    let soma = 0
-    for (let i = 0; i < vetor.length; i++) {
-    soma += vetor[i]
-}
-    console.log(soma)
-*/
-
-//a mesma coisa só que mostrando a média depois(acho?)
-/*
-const prompt = require('prompt-sync')();
-const vetor = []
-
-for (let i = 0; i < 5; i++) 
-    vetor.push(Number(prompt("Digite seu número")));
-
-    let soma = 0
-    for (let i = 0; i < vetor.length; i++) {
-    soma += vetor[i]
-}
- let media = soma / vetor.lenght
- let quantidade = 0
-
- for (let i = 0; i < vetor.length; i++){
-    if (vetor[i] > media){
-        quantidade++
+const usuarios = [{id: 1, nome: 'Ana'}, {id: 2, nome: 'Beto'}]
+for (let i = 0; i < usuarios.length; i++){
+    const usuario = usuarios[i]
+    if (usuario.id === 2) {
+        console.log(usuario)
     }
- }
-console.log(quantidade)
-*/
-    //maior e menor número do vetor nesse mesmo algoritimo
-/*
-    const prompt = require('prompt-sync')();
-const vetor = []
-
-for (let i = 0; i < 5; i++) 
-    vetor.push(Number(prompt("Digite seu número")));
-
-    let soma = 0
-    for (let i = 0; i < vetor.length; i++) {
-    soma += vetor[i]
 }
- let media = soma / vetor.lenght
- let quantidade = 0
+*/
 
- for (let i = 0; i < vetor.length; i++){
-    if (vetor[i] > media){
-        quantidade++
+// 2- Com uma lista de produtos [{nome: 'Teclado', preco: 100}, {nome: 'Mouse', preco:50}],
+// filtre apenas os que custam mais de R$ 70.
+
+const produtos = [{nome: 'Teclado', preco: 100}, {nome: 'mouse', preco: 50}]
+for (let i = 0; i < produtos.length; i++){
+    const produto = produtos[i]
+    if (produto.preco > 70) {
+        console.log(produto)
     }
- }
-console.log(quantidade)
-
-let i_maior  = 0
-for (let i = 1; i < vetor.length; i++){
-    if (vetor[i] > vetor[i_maior]) i_maior = i
 }
-
-let i_menor = 0
-
-for (let i = 1; i < vetor.length; i++){
-    if (vetor[i] < vetor[i_menor]) i_menor = i
-}
-console.log(console.log(vetor[i_maior], vetor[i_menor]))
 */
-
-//trocar elementos
-
+// 3- Verifique se todos os números de um array são maiores que 0
 /*
-const vetor = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-for (let i = 1; i < vetor.length / 2; i++){
-    let aux = vetor[i]
-    vetor[i] = vetor[vetor.lenght -1 -i]
-    vetor[vetor.lenght -1 -i] = aux
+const numeros = [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+for (let i = 0; i < numeros.length; i++){
+    const numero = numeros[i]
+    if (numero > 0) {
+        console.log(numero)
+    }
 }
+    */
 
-console.log(vetor)
+// 4- Verifique se pelo menos um objeto no array de produtos tem o nome "Cadeira".
+/*
+const objetos = [{nome: 'Teclado'}, {nome: 'Cadeira'}, {nome: 'Mesa'}]
+for (let i = 0; i < objetos.length; i++){
+    const objeto = objetos[i]
+    if (objeto.nome === Cadeira) {
+        console.log(objeto)
+    }
+}
 */
+// 5- Dado um array de objetos alunos com a propriedade nota, calcule a média aritmética
+//das notas.
 
-//criem um vetor com frutas que diga a posição, se nao estiver, fruta não encontrada
+const notas = []
+for (let i = 0; i < notas.length; i++){
+    const nota = notas[i]
+    if (nota.nome === Cadeira) {
+        console.log(nota)
+    }
+}
